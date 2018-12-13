@@ -1,3 +1,32 @@
-<p>
-yeet
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" src="main.css">
+    
+    <!--<script src="angular.min.js"></script>
+    <script src="angular-root.min.js"></script>
+    <script src="angular-mocks.js"></script>
+    -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    
+    
+    <script src="index.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div class="header">
+      <div class="container">
+        <h1>TITLE</h1>
+      </div>
+    </div>
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+        <h1 class="header"> {{ title | uppercase }}</h1>
+        <p class="paragraph">{{ omg | lowercase }}</p>
+        <h7>{{ desco | lowercase }}</h7>
+      </div>
+    </div>
+  </body>
+</html>
